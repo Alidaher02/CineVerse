@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineVerse - Particle Background</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body class="relative text-white">
+
+    <!-- Particles Background -->
+    <div id="tsparticles" class="fixed top-0 left-0 w-full h-full -z-10"></div>
+
+    <!-- Optional black overlay for better contrast -->
+    <div class="fixed inset-0 bg-black/80 -z-10"></div>
+
+    <!-- Your Content -->
+    <header class="text-center py-10">
+      <h1 class="text-4xl font-bold text-red-600">CineVerse</h1>
+      <p class="mt-4 text-lg">Welcome to the Galaxy of Movies</p>
+    </header>
+
+    <main class="px-4 md:px-10 space-y-20">
+      <section class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-4">Now Showing</h2>
+        <p class="text-gray-300">Explore the latest blockbusters playing in theaters.</p>
+      </section>
+
+      <!-- Movie Cards -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-white/10 p-4 rounded-xl shadow-lg hover:scale-105 transform transition-all duration-300">
+          <img src="./img/guardians.jpg" alt="Movie" class="rounded-lg mb-3">
+          <h3 class="text-xl font-semibold">Guardians of the Galaxy</h3>
+          <p class="text-sm text-gray-300">Action | 2h 8m | 2018</p>
+        </div>
+        <!-- More cards here -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-gray-400">
+      © 2025 CineVerse. All rights reserved.
+    </footer>
+
+    <!-- Particle Config Script -->
+    <script>
+      tsParticles.load("tsparticles", {
+        fullScreen: { enable: false },
+        background: {
+          color: { value: "#000000" },
+        },
+        particles: {
+          number: {
+            value: 100,
+            density: {
+              enable: true,
+              area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+          },
+          opacity: {
+            value: 0.5,
+            random: true,
+          },
+          size: {
+            value: { min: 1, max: 3 },
+          },
+          move: {
+            enable: true,
+            speed: 0.3,
+            direction: "none",
+            outModes: "bounce",
+          },
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: "repulse" },
+            onClick: { enable: true, mode: "push" },
+          },
+          modes: {
+            repulse: { distance: 100 },
+            push: { quantity: 4 },
+          },
+        },
+        detectRetina: true,
+      });
+    </script>
+  </body>
+</html>

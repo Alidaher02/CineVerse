@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body class="w-full h-full  text-white min-h-screen  bg-[#0b0b0b]">
+    
+    
+          
+          
+      </div>
+    <header class="text-white sm:justify-around   list-none relative flex md:justify-around  sm:items-center sm:mr-0 md:items-center mr-40 md:mr-0 p-5 md:fixed top-0 left-0  z-50 w-full">
+        <a href="./index.html"><svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="28" font-size="28" font-weight="bold" font-family="Arial, sans-serif" fill="white">
+              <tspan fill="#e50914">Cine</tspan><tspan>Verse</tspan>
+            </text>
+          </svg></a>
+         
+        
+         <div class="hidden sm:flex s md:flex md:items-center px-[32px] gap-5 md:bg-white/10 md:border border-gray-300/20 py-[12px] rounded-full ">
+             <li><a class="hover:text-[#e50914]" href="./index.html">Home</a></li>
+             <li><a class="hover:text-[#e50914]" href="./more.html">Movies</a></li>
+             <li><a class="hover:text-[#e50914]" href="">Theaters</a></li>
+             <li><a class="hover:text-[#e50914]" href="">Releases</a></li>
+         </div>
+         <div class="md:flex sm:flex hidden items-center gap-5">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search max-md:hidden w-6 h-6 cursor-pointer" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+              <a class="px-6 py-2 bg-[#e50914] rounded-full   text-white hover:bg-transparent hover:text-[#e50914] hover:border " href="./login.html">Login</a>
+         </div>
+         
+         <div class="text-white absolute right-0 top-0   sm:hidden  mt-4 mr-4">
+            <div>
+                <button id="menubtn"><i class="fa-solid fa-bars text-2xl"></i></button></div>
+                </div>
+        </header> 
+     
+     <header id="menu" class="hidden">
+         <div class=" list-none absolute top-0 left-0 text-white p-10 flex flex-col w-full h-full   z-50 backdrop-blur justify-center bg-black/70 gap-3 items-center">
+             <li><a class="hover:text-[#e50914]" href="./index.html">Home</a></li>
+             <li><a class="hover:text-[#e50914]" href="./more.html">Movies</a></li>
+             <li><a class="hover:text-[#e50914]" href="">Theaters</a></li>
+             <li><a class="hover:text-[#e50914]" href="">Releases</a></li>
+             <div>
+                 <a class="px-6 py-2 bg-[#e50914] rounded-full absolute top-5 left-2   text-white hover:bg-transparent hover:text-[#F84565] hover:border " href="./login.html">Login</a>
+         
+               </div>
+               <div>
+                <button id="closebtn" class="text-white absolute top-0 right-0 p-5  text-xl hover:text-[#F84565]">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+          
+         </div>
+         </header>
+         
+    <section class="md:flex-row flex flex-col  items-center">
+
+        <div class="relative top-44 left-5  md:top-0  md:left-10 w-60 h-[166px] py-10 flex flex-col justify-around items-start px-5 rounded-lg bg-[#e50914]/20 border border-[#e50914]/20">
+          <h1>Available Timings</h1>
+          <button class="hover:bg-[#e50914]/30 hover:w-32 hover:h-8 hover:rounded-lg"><span><i class="fa-regular fa-clock"></i></span> 11:00 AM</button>
+        </div>
+    <div class="flex flex-col  items-center mt-48 gap-10 md:mr-24">
+      <div class="md:ml-24 g:ml-0">
+        <h1 class="text-center  font-bold py-5">Select Your seat</h1>
+        <img class="w-[90%] ml-5  md:w-full " src="./img/screenImage.svg" alt="">
+        <p class="text-center text-gray-400 text-sm">SCREEN SIDE</p>
+      </div>
+          
+        <div class="md:grid-cols-9 md:grid  grid-cols-3 gap-5 grid   w-[25%] md:gap-10 lg:gap-9 text-xs text-gray-100" >
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A1</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A2</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A3</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A4</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A5</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A6</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A7</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A8</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">A9</button></div>
+
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B1</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B2</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B3</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B4</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B5</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B6</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B7</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B8</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">B9</button></div>
+            </div>
+        <div class="flex justify-center md:justify-around lg:justify-evenly xl:justify-evenly space-x-12 w-full">
+        <div class="md:grid-cols-9 grid grid-cols-3 w-[25%] gap-5 md:gap-9 lg:gap-9 text-xs text-gray-100">
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C1</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C2</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C3</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C4</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C5</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C6</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C7</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C8</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">C9</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D1</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D2</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D3</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D4</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D5</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D6</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D7</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D8</button></div>
+            <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">D9</button></div>
+    
+            </div>
+            <div class="md:grid-cols-9 grid grid-cols-3 w-[25%] gap-5 md:gap-9 lg:gap-9 text-xs text-gray-100 ">
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E1</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E2</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E3</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E4</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E5</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E6</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E7</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E8</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">E9</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F1</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F2</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F3</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F4</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F5</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F6</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F7</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F8</button></div>
+                <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">F9</button></div>
+        
+                </div>
+            </div>
+            <div class="flex justify-center md:justify-around lg:justify-evenly xl:justify-evenly space-x-12 w-full">
+                <div class="md:grid-cols-9 grid grid-cols-3 w-[25%] gap-5 md:gap-9 lg:gap-9 text-xs text-gray-100">
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G1</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G2</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G3</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G4</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G5</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G6</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G7</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G8</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">G9</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H1</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H2</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H3</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H4</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H5</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H6</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H7</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H8</button></div>
+                    <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">H9</button></div>
+            
+                    </div>
+                    <div class="md:grid-cols-9 grid grid-cols-3 w-[25%] gap-5 md:gap-9 lg:gap-9 text-xs text-gray-100">
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I1</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I2</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I3</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I4</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I5</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I6</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I7</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I8</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">I9</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J1</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J2</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J3</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J4</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J5</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J6</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J7</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J8</button></div>
+                        <div class=" "><button class="h-8 w-8 rounded border border-[#e50914] cursor-pointer">J9</button></div>
+                
+                        </div>
+    </div>
+
+    <div>
+        <a class="px-5 py-2 bg-[#e50914] hover:bg-transparent hover:text-[#e50914] hover:border hover:border-[#e50914] rounded-full" href="">Proceed to Checkout<i class="fa-solid fa-arrow-right ml-2"></i></a>
+    </div>
+        
+    </div>
+</section>
+<footer class="text-sm  md:p-16 ">
+    <div class="lg:flex-row sm:flex-row sm:flex lg:items-center lg:flex space-y-5 flex-col justify-around p-10 text-white ">
+
+    
+     <div class="lg:w-1/4 sm:w-1/2 sm:mt-24 lg:space-y-4 space-y-2 ">
+        <svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="28" font-size="28" font-weight="bold" font-family="Arial, sans-serif" fill="white">
+              <tspan fill="#e50914">Cine</tspan><tspan>Verse</tspan>
+            </text>
+          </svg>
+     <div>
+        <p class="text-sm  ">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+ 
+     </div>
+    </div>
+    <div class="lg:w-1/2 sm:flex sm:space-x-12 ">
+     <div class="flex sm:flex sm:flex-col lg:grid-cols-1 lg:grid   gap-3 py-2 ">
+        <img src="./img/googlePlay.svg" alt="">
+        <img src="./img/appStore.svg" alt="">
+     </div>
+     <div class="flex justify-around sm:flex lg:flex lg:flex-row lg:gap-32  sm:flex-col sm:space-y-12 ">
+     <div class="space-y-4">
+        <h4 class="font-semibold">Company</h4>
+        <ul class="space-y-2">
+            <li><a class="hover:text-[#e50914]" href="">Home</a></li>
+            <li><a class="hover:text-[#e50914]" href="">About Us</a></li>
+            <li><a class="hover:text-[#e50914]" href="">Contact Us</a></li>
+            <li><a class="hover:text-[#e50914]" href="">Privacy policy</a></li>
+        </ul>
+     </div>
+     <div class="space-y-4">
+        <h4 class="font-semibold">Get in touch</h4>
+        <div class="space-y-2"><p>+1-234-567-890</p>
+        <p>contact@example.com</p></div>
+        
+     </div>
+    </div>
+</div>
+</div>
+<div>
+ <div class="text-white text-center lg:ml-20">
+     <hr>
+     <p class="text-sm py-2">Copyright 2025 © GreatStack. All Right Reserved.</p>
+  </div>
+</div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body class="text-white min-h-screen bg-[#0b0b0b]">
+    <div class="bg-[url('./img/backgroundImage.png')]   bg-cover bg-center h-[100vh] w-full">
+    <div class="  flex ">
+       <header class="text-white sm:justify-around   list-none relative flex md:justify-around  sm:items-center sm:mr-0 md:items-center mr-40 md:mr-0 p-5 md:fixed top-0 left-0  z-50 w-full">
+        <a class="" href="./index.html"><svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="28" font-size="28" font-weight="bold" font-family="Arial, sans-serif" fill="white">
+              <tspan fill="#e50914">Cine</tspan><tspan>Verse</tspan>
+            </text>
+          </svg>
+          </a>
+        
+       
+        <div class="hidden sm:flex md:flex  md:items-center  px-[32px] gap-5 md:bg-white/10 md:border border-gray-300/20 py-[12px] rounded-full">
+            <li><a class="hover:text-[#e50914]" href="./index.html">Home</a></li>
+            <li><a class="hover:text-[#e50914]" href="./more.html">Movies</a></li>
+            <li><a class="hover:text-[#e50914]" href="">Theaters</a></li>
+            <li><a class="hover:text-[#e50914]" href="">Releases</a></li>
+        </div>
+        <div class="md:flex sm:flex hidden items-center gap-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search max-md:hidden w-6 h-6 cursor-pointer" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+             <a class="sm:px-6 sm:py-2 px-4 py-1 rounded-full bg-[#e50914]  hover:bg-transparent hover:text-[#e50914] border-[#e50914] transition duration-300 hover:border  " href="./login.html">Login</a>
+        </div>
+        
+    </header> 
+    <header id="menu" class="hidden">
+        <div class=" list-none absolute top-0 left-0 text-white p-10 flex flex-col w-full h-full   z-50 backdrop-blur justify-center bg-black/70 gap-3 items-center">
+            <li><a class="hover:text-[#e50914]" href="./index.html">Home</a></li>
+            <li><a class="hover:text-[#e50914]" href="./more.html">Movies</a></li>
+            <li><a class="hover:text-[#e50914]" href="">Theaters</a></li>
+            <li><a class="hover:text-[#e50914]" href="">Releases</a></li>
+            <div>
+                <a class="px-4 py-1 text-white hover:bg-transparent bg-[#e50914]  hover:text-[#e50914] border-[#e50914] transition duration-300 hover:border rounded-full " href="./login.html">Login</a>
+    
+              </div>
+            <div>
+                <button id="closebtn" class="text-white absolute top-0 right-0 p-5 text-xl hover:text-[#F84565]">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="text-white sm:hidden absolute right-0 top-0 p-5">
+        <div><button id="menubtn"><i class="fa-solid fa-bars text-2xl"></i>
+          </button></div>
+          
+          
+      </div>
+    
+    </div>
+    <section class="md:w-[40%] md:mb-10  sm:absolute sm:bottom-1 sm:w-[60%] sm:ml-24 md:ml-32  ml-4  text-sm space-y-5 mt-32 flex flex-col h-96 md:justify-around">
+        <img class="w-1/2" src="./img/marvelLogo.svg" alt="">
+        <div class="text-white space-y-5  flex flex-col ">
+            <h1 class="font-bold md:text-6xl text-4xl ">Guardians <br> of the Galaxy</h1>
+            <div class="flex md:text-sm text-xs   gap-5 items-center">
+             <p class="">Action | Adventure | Sci-Fi</p>
+             <p class="flex gap-2 items-center"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar w-4.5 h-4.5" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></span> 2018</p>
+             <p class="flex gap-2 items-center"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-4.5 h-4.5" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span> 2h 8m</p>
+            </div>
+            <p class="text-sm font-thin md:font-normal ">In a post-apocalyptic world where cities ride on wheels and consume each other to survive, two people meet in London and try to stop a conspiracy.</p>
+        </div>
+        <div>
+      
+            <a class="px-8 py-2  rounded-full  bg-[#e50914]    text-white hover:bg-transparent hover:text-[#e50914] border-[#e50914] transition duration-300 hover:border " href="./more.html">Explore Movies  </a>
+        </div>  
+       
+    </section>
+</div>
+<section class=" text-white flex flex-col  items-center">
+    <div class=" flex justify-center sm:space-x-48 py-14 lg:justify-around lg:gap-96 gap-36 ">
+       <h2>Now Showing</h2>
+    <a class="hover:text-[#F84565]" href="./more.html">View All <span><i class="fa-solid fa-arrow-right"></i></span></a> 
+    </div>
+    <div class=" sm:px-5  grid grid-cols-2 ml-2 gap-5  md:grid-cols-3 sm:grid-cols-2 sm:grid  lg:ml-0 lg:flex lg:gap-5 lg:justify-center">
+        <div class=" lg:w-1/5   h-80  relative cursor-pointer">
+            <img class="h-80 w-full sm:object-cover object-right-bottom rounded-lg " src="./img/avatar_the_way_of_water.jpg" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-70  items-center space-y-2 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
+                <h3 class="text-xs font-bold">Avatar: The Way of Water</h3>
+                <p class="text-xs font-thin">Sci-Fi/Action/Fantasy 3h 12m</p>
+                <div class="mt-2">
+                    <a href="./film2.html" class="bg-red-600 hover:bg-transparent hover:text-[#e50914] hover:border hover:border-[#e50914] text-white text-sm px-3 py-1 rounded">Buy Tickets</a>
+                  </div>
+            </div>
+        </div>
+        <div class=" lg:w-1/5    h-80 relative cursor-pointer ">
+            <img class="h-80 w-full sm:object-cover object-right-bottom rounded-lg " src="./img/elio_ver5.jpg" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-xs space-y-2 opacity-0 hover:opacity-100">
+                <h3 class="font-bold">Elio</h3>
+                <p class="font-thin">2025 PG 1h 38m</p>
+                <div>
+                    <a class="bg-red-600 hover:bg-transparent  hover:text-[#e50914] hover:border hover:border-[#e50914] text-white text-sm px-3 py-1 rounded" href="./f2.html">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+        <div class=" lg:w-1/5  h-80 relative cursor-pointer ">
+            <img class="h-80 w-full sm:object-cover object-right-bottom  rounded-lg " src="./img/jurassic_world_rebirth_ver8.jpg" alt="">
+            <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center space-y-2 opacity-0 hover:opacity-100 ">
+                <h3 class="text-xs font-bold">Jurassic World: Rebirth</h3>
+                <p class="text-xs font-thin">2025 PG-13 2h 13m</p>
+                <div>
+                    <a class="bg-red-600 hover:bg-transparent  hover:text-[#e50914] hover:border hover:border-[#e50914] text-white text-sm px-3 py-1 rounded" href="./f3.html">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+        <div class=" lg:w-1/5  h-80 relative cursor-pointer">
+            <img class="h-80 w-full sm:object-cover object-right-bottom rounded-lg" src="./img/how_to_train_your_dragon_ver2.jpg" alt="">
+            <div class="absolute inset-0 flex flex-col bg-black bg-opacity-70 justify-center items-center space-y-2 opacity-0 hover:opacity-100 transition-opacity duration-300 ">
+                <h3 class="text-xs font-bold">How to Train Your Dragon</h3>
+                <p class="text-xs">2025 ‧ Fantasy ‧ 2h 5m</p>
+                <div>                <a class="bg-red-600 hover:bg-transparent  hover:text-[#e50914] hover:border hover:border-[#e50914] text-white text-sm px-3 py-1 rounded" href="./tt.html">Buy Tickets</a>
+</div>
+            </div>
+        </div>
+        <div class=" lg:w-1/5 h-80 relative">
+            <a href=""><img class="h-80 w-full sm:object-cover  rounded-lg " src="./img/superman_ver2.jpg" alt=""></a>
+            <div class="absolute inset-0 bg-black bg-opacity-70  items-center space-y-2 opacity-0 hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center">
+                <h3 class="text-xs font-bold">Superman</h3>
+                <p class="text-xs font-thin">2025 PG-13 2h 9m</p>
+                <div class="mt-2">
+                    <a href="./f5.html" class="bg-red-600 hover:bg-transparent hover:text-[#e50914] hover:border hover:border-[#e50914] text-white text-sm px-3 py-1 rounded">Buy Tickets</a>
+                  </div>
+            </div>
+       
+        </div>
+        <div class=" lg:w-1/5  h-80 relative cursor-pointer">
+            <img class="h-80 w-full sm:object-cover object-right-bottom rounded-lg" src="./img/spiderman_no_way_home_ver18.jpg" alt="">
+            <div class="absolute inset-0 flex flex-col bg-black bg-opacity-70 justify-center items-center space-y-2 opacity-0 hover:opacity-100 transition-opacity duration-300 ">
+                <h3 class="text-xs font-bold">How to Train Your Dragon</h3>
+                <p class="text-xs">2025 ‧ Fantasy ‧ 2h 5m</p>
+                <div>                <a class="bg-red-600 hover:bg-transparent  hover:text-[#e50914] hover:border hover:border-[#e50914] text-white text-sm px-3 py-1 rounded" href="./tt.html">Buy Tickets</a>
+</div>
+            </div>
+        </div>
+</div>
+<div class="mt-8 py-5">
+    <a class="py-2 px-7 bg-[#e50914]  rounded-full hover:text-[#e50914] hover:border-[#e50914] hover:border hover:bg-transparent  " href="./more.html">Show more</a>
+</div>
+</section>
+<section class="">
+    <div class="flex justify-center sm:w-3/4 sm:ml-24 lg:ml-40  items-center min-h-screen px-4">
+        <div class="w-full max-w-4xl aspect-video">
+          <iframe class="w-full h-full rounded-xl shadow-lg" src="https://www.youtube.com/embed/WpW36ldAqnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+          </iframe>
+        </div>
+      </div>
+      <div class="sm:relative md:mt-5 sm:right-7  flex-col grid grid-cols-2 gap-3 lg:left-1 md:grid md:gap-3 md:relative md:right-12 md:grid-cols-4 lg:flex lg:flex-row lg:ml-44 lg:gap-5  sm:grid-cols-2 sm:ml-24 sm:grid  relative bottom-36 lg:bottom-10  items-center space-y-4 rounded-lg">
+      <img class=" lg:w-1/5 md:w-[100%] rounded-lg" src="./img/1.jpg" alt="">
+      <img class=" lg:w-1/5 md:w-[100%]  rounded-lg" src="./img/maxresdefault (1).jpg" alt="">
+      <img class=" lg:w-1/5 md:w-[100%] rounded-lg" src="./img/maxresdefault (2).jpg" alt="">
+      <img class=" lg:w-1/5 md:w-[100%] rounded-lg" src="./img/maxresdefault.jpg" alt="">
+      </div>
+</section>
+<footer class="text-sm  md:p-16 ">
+    <div class="lg:flex-row sm:flex-row sm:flex lg:items-center lg:flex space-y-5 flex-col justify-around p-10 text-white ">
+  
+    
+     <div class="lg:w-1/4 sm:w-1/2 sm:mt-24 lg:space-y-4 space-y-2 ">
+        <svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="28" font-size="28" font-weight="bold" font-family="Arial, sans-serif" fill="white">
+              <tspan fill="#e50914">Cine</tspan><tspan>Verse</tspan>
+            </text>
+          </svg>
+     <div>
+        <p class="text-sm  ">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+  
+     </div>
+    </div>
+    <div class="lg:w-1/2 sm:flex sm:space-x-12 ">
+     <div class="flex sm:flex sm:flex-col lg:grid-cols-1 lg:grid   gap-3 py-2 ">
+        <img src="./img/googlePlay.svg" alt="">
+        <img src="./img/appStore.svg" alt="">
+     </div>
+     <div class="flex justify-around sm:flex lg:flex lg:flex-row lg:gap-32  sm:flex-col sm:space-y-12 ">
+     <div class="space-y-4">
+        <h4 class="font-semibold">Company</h4>
+        <ul class="space-y-2">
+            <li><a class="hover:text-[#e50914]" href="">Home</a></li>
+            <li><a class="hover:text-[#e50914]" href="">About Us</a></li>
+            <li><a class="hover:text-[#e50914]" href="">Contact Us</a></li>
+            <li><a class="hover:text-[#e50914]" href="">Privacy policy</a></li>
+        </ul>
+     </div>
+     <div class="space-y-4">
+        <h4 class="font-semibold">Get in touch</h4>
+        <div class="space-y-2"><p>+1-234-567-890</p>
+        <p>contact@example.com</p></div>
+        
+     </div>
+    </div>
+  </div>
+  </div>
+  <div>
+  <div class="text-white text-center lg:ml-20">
+     <hr>
+     <p class="text-sm py-2">Copyright 2025 © GreatStack. All Right Reserved.</p>
+  </div>
+  </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
